@@ -39,13 +39,15 @@ export default function About(){
         <section id="about" className="py-14 lg:py-20">
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:px-10">
-                    <div className="flex flex-col justify-between gap-6">
-                        <h2 className="text-4xl lg:text-6xl font-montserrat font-medium">{ data.title }</h2>
-                        <p className="text-neutral-500 font-openSans font-medium">{ data.description }</p>
-                        <p className="text-neutral-500 font-openSans font-medium">{ data.description_two }</p>
+                    <div className="flex flex-col gap-12">
+                        <div className="flex flex-col gap-8">
+                            <h2 className="text-4xl lg:text-6xl font-montserrat font-medium">{ data.title }</h2>
+                            <p className="text-neutral-500 font-openSans font-medium">{ data.description }</p>
+                            <p className="text-neutral-500 font-openSans font-medium">{ data.description_two }</p>
+                        </div>
                         <Link href="/contact-us">
                             <button className="relative flex items-center gap-3 rounded-full pl-5 pr-12 py-2 border-2 border-accent-green bg-white text-accent-green hover:bg-accent-green hover:text-white font-openSans font-semibold group  duration-300">
-                                Contact Us
+                                Get In Touch
                                 <span className="absolute right-1 text-lg size-8 group-hover:bg-white group-hover:text-accent-green bg-accent-green text-white -rotate-45 group-hover:rotate-0 duration-300 flex items-center justify-center rounded-full"><FaArrowRight /></span>
                             </button>
                         </Link>

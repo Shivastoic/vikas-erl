@@ -5,3 +5,17 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* SCROLLBAR DESIGN */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+   
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+   
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #d1585b;
+}

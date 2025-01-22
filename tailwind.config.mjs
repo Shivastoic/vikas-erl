@@ -8,7 +8,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                "accent-green": "#036a51",
+                "accent-green": "#d1585b",
+                "accent-mint": "#FF8383",
+                "accent-cyan": "#cae1de",
             },
             fontFamily: {
                 openSans: ["var(--font-open-sans)", "serif"],

@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body
-                className={`${openSans.variable} ${montserrat.variable} antialiased`}
+                className={`${openSans.variable} ${montserrat.variable} antialiased bg-[#F8f8ff]`}
             >   
                 <Header />
                 <main>

@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 // DATA
 const data = {
 
-    logo_src: "/logos/logo.png",
+    logo_src: "/logos/logo-red.png",
 
 }
 
@@ -37,14 +37,14 @@ export default function Header(){
 
         <header className="fixed top-0 w-full bg-white z-50">
             <Container>
-                <nav className="flex items-center justify-between py-6 border-b-2 border-black/10">
+                <nav className="flex items-center justify-between py-6 border-b border-black/10">
                     <Link href="/">
                         <Image 
                             src={ data.logo_src }
                             alt=""
                             width={ 500 }
                             height={ 500 }
-                            className="w-40"
+                            className="w-44"
                         />
                     </Link>
                     <ul className="flex items-center gap-6">
