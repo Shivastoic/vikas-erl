@@ -41,7 +41,7 @@ export default function About(){
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:px-10">
                     <div className="flex flex-col gap-12">
                         <div className="flex flex-col gap-8">
-                            <h2 className="text-4xl lg:text-6xl font-montserrat font-medium">{ data.title }</h2>
+                            <h2 className="text-4xl lg:text-6xl text-accent-green font-montserrat font-medium">{ data.title }</h2>
                             <p className="text-neutral-500 font-openSans font-medium">{ data.description }</p>
                             <p className="text-neutral-500 font-openSans font-medium">{ data.description_two }</p>
                         </div>
