@@ -51,7 +51,7 @@ export default function Services(){
 
     return (
 
-        <section className="py-14 lg:py-20">
+        <section className="py-14 lg:py-20" id="services">
             <Container>
                 <div className="flex flex-col gap-10 lg:px-10">
                     <div className="flex items-center justify-between py-4 border-b border-black/10">

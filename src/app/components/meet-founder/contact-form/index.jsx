@@ -2,7 +2,7 @@ export default function ContactForm(){
 
     return (
 
-        <form className="flex flex-col gap-4 bg-white p-12 rounded-2xl">
+        <form className="flex flex-col gap-4 rounded-2xl">
             <div className="flex gap-4">
                 <input 
                     type="text" 

@@ -20,7 +20,7 @@ const logo_src = [
 
 export default function Clients() {
     return (
-        <section className="py-14 lg:py-20">
+        <section className="py-14 lg:py-20" id="clients">
             <div className="flex flex-col gap-10">
                 <h2 className="text-4xl lg:text-6xl text-center text-accent-green font-montserrat font-medium">
                     {data.title}
