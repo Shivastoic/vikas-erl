@@ -1,13 +1,34 @@
 import Container from "@/app/components/container/index";
+import Image from "next/image";
+import ContactForm from "@/app/components/meet-founder/contact-form/index";
+
+// DATA
+const data = {
+
+    title: "Contact Us",
+
+}
 
 export default function MeetFounder(){
 
     return (
 
-        <section className="py-14 lg:py-20 bg-[url('/images/founder.jpg')] bg-cover bg-cneter bg-no-repeat h-[130vh]">
+        <section className="pt-14 lg:pt-20 bg-[url('/images/banner.jpg')] bg-cover bg-right bg-no-repeat" id="contact">
             <Container>
-                <div className="flex justify-end">
-                    <div className="rounded-3xl bg-white/15 backdrop-blur-md h-[70vh] w-[500px]"></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+                    <div className="flex flex-col gap-10 items-center justify-center">
+                        <h2 className="text-4xl lg:text-6xl text-accent-green font-montserrat font-semibold">{ data.title }</h2>
+                        <ContactForm />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <Image 
+                            src="/images/banner-img.png"
+                            alt=""
+                            width={ 1000 }
+                            height={ 1000 }
+                            className="w-full"
+                        />
+                    </div>
                 </div>
             </Container>
         </section>

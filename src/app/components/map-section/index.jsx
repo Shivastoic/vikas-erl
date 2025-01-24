@@ -34,7 +34,7 @@ export default function MapSection(){
         <section className="py-14 lg:py-20 bg-accent-green">
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div className="w-full">
+                    <div className="w-full overflow-hidden">
                         <GlobeComponent />
                     </div>
                     <div className="flex flex-col justify-center gap-10 py-8">

@@ -1,6 +1,7 @@
 import { Open_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "@/app/components/header";
+import Header from "@/app/components/header/index";
+import Footer from "@/app/components/footer/index";
 
 const openSans = Open_Sans({
     variable: "--font-open-sans",
@@ -63,7 +64,7 @@ export default function RootLayout({ children }) {
                 <main>
                     {children}
                 </main>
-                    
+                <Footer />
             </body>
         </html>
     );

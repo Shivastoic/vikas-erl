@@ -36,9 +36,9 @@ export default function About(){
 
     return(
 
-        <section id="about" className="py-14 lg:py-20">
+        <section id="about" className="py-8 md:py-14 lg:py-20">
             <Container>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:px-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 lg:px-10">
                     <div className="flex flex-col gap-12">
                         <div className="flex flex-col gap-8">
                             <h2 className="text-4xl lg:text-6xl text-accent-green font-montserrat font-medium">{ data.title }</h2>

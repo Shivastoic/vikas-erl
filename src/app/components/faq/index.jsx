@@ -44,7 +44,7 @@ export default function FAQ(){
 
         <section className="py-14 lg:py-20">
             <Container>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16">
                     <div className="w-full h-full ">
                         <Image 
                             src={ data.src }

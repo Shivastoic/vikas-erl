@@ -2,11 +2,12 @@ import Container from "@/app/components/container/index";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import MobileNav from "./mobile-nav";
 
 // DATA
 const data = {
 
-    logo_src: "/logos/logo-red.png",
+    logo_src: "/logos/logo.png",
 
 }
 
@@ -44,10 +45,10 @@ export default function Header(){
                             alt=""
                             width={ 500 }
                             height={ 500 }
-                            className="w-44"
+                            className="w-40 md:w-44"
                         />
                     </Link>
-                    <ul className="flex items-center gap-6">
+                    <ul className="hidden md:flex items-center gap-6">
                         {
 
                             nav_links.map( ( link, index ) =>(
@@ -62,12 +63,13 @@ export default function Header(){
 
                         }
                     </ul>
-                    <Link href="/contact-us">
+                    <Link href="#contact" className="hidden md:block">
                         <button className="relative flex items-center gap-3 rounded-full pl-5 pr-12 py-2 border-2 border-accent-green bg-white text-accent-green hover:bg-accent-green hover:text-white font-openSans font-semibold group  duration-300">
                             Contact Us
                             <span className="absolute right-1 text-lg size-8 group-hover:bg-white group-hover:text-accent-green bg-accent-green text-white -rotate-45 group-hover:rotate-0 duration-300 flex items-center justify-center rounded-full"><FaArrowRight /></span>
                         </button>
                     </Link>
+                    <MobileNav navlinks={ nav_links } />
                 </nav>
             </Container>
         </header>
